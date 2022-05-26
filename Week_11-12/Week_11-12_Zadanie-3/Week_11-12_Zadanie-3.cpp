@@ -18,15 +18,21 @@ Datchiki datch[5];
 
 int main()
 {
+    int tochn;
     float DiapazonMax = 0;
     for (int i = 0; i < 5; i++) {
         datch[i].max = 100 + rand() % 200;
         datch[i].min = 1 + rand() % 20;
         datch[i].diap = datch[i].max + datch[i].min;
+
         if (datch[i].diap > DiapazonMax)
-            DiapazonMax = datch[i].diap;
+        {
+            tochn = i;
+        DiapazonMax = datch[i].diap;
+    }
     }
 
-    std::cout << DiapazonMax;
+
+    std::cout <<"Datchik s max diapazonom : "<<tochn<<"; S diapazonom izmereniya : " << DiapazonMax;
 }
 
