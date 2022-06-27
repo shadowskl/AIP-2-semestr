@@ -6,7 +6,7 @@
 #include <iostream>
 using namespace std;
 void matric() {
-    int Summ = 0;
+    int summ = 0;
     const int rows = 5;
     const int cols = 5;
     int mat[rows][cols];
@@ -23,9 +23,9 @@ void matric() {
 
     for (int i = 0; i < rows; i++) {
         if (mat[i][i] < 0)
-            Summ++;
+            summ++;
     }
-    cout << Summ;
+    cout << summ;
 }
 
 int main()
